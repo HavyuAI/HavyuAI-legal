@@ -24,7 +24,7 @@ Havyu AI is fully usable without an account. However, you may optionally sign in
 
 If you choose to sign in:
 * We receive your email address and the name you provide. If you use Apple's "Hide My Email" feature, we receive a private relay address rather than your real email.
-* This authentication data is stored by our authentication provider, **Supabase**, on infrastructure located in the [European Union / region — see note below].
+* This authentication data is stored by our authentication provider, **Supabase**, on infrastructure located in the EU West.
 * Your user identifier is shared with our subscription processor, RevenueCat, so that your Pro subscription status follows you across devices.
 * We do not store any payment information. All payments are processed by Apple or Google.
 
