@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <title>Delete Your Havyu Account &amp; Data</title>
+  <style>
+    :root {
+      --espresso: #3E2723;
+      --chestnut: #6D4C41;
+      --faded: rgba(109, 76, 65, 0.7);
+      --green: #2E7D32;
+      --bg: #FAF7F4;
+      --card: #FFFFFF;
+      --border: rgba(109, 76, 65, 0.15);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--espresso);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    header { margin-bottom: 40px; }
+    .kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--green);
+      margin: 0 0 8px;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 800;
+      margin: 0 0 12px;
+      letter-spacing: -0.01em;
+    }
+    .lede {
+      font-size: 17px;
+      color: var(--faded);
+      margin: 0;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px 28px 24px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--chestnut);
+      margin: 0 0 16px;
+    }
+    ol, ul { margin: 0; padding-left: 22px; }
+    li { margin-bottom: 12px; }
+    li:last-child { margin-bottom: 0; }
+    .step-strong { font-weight: 700; }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 2px 8px;
+      border-radius: 6px;
+      vertical-align: middle;
+    }
+    .tag-del { background: rgba(46, 125, 50, 0.12); color: var(--green); }
+    .tag-keep { background: rgba(109, 76, 65, 0.12); color: var(--chestnut); }
+    .data-row {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .data-row:last-child { border-bottom: none; }
+    .data-row .label { flex: 1; }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: var(--faded);
+      text-align: center;
+    }
+    footer a { color: var(--green); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .note {
+      font-size: 14px;
+      color: var(--faded);
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="kicker">Havyu</p>
+      <h1>Delete Your Account &amp; Data</h1>
+      <p class="lede">This page explains how to permanently delete your Havyu account and the data associated with it. Havyu is developed by Havyu (com.havyu.app).</p>
+    </header>
+
+    <div class="card">
+      <h2>How to delete your account (in the app)</h2>
+      <ol>
+        <li>Open the <span class="step-strong">Havyu</span> app on your device.</li>
+        <li>Go to <span class="step-strong">Settings</span>.</li>
+        <li>Scroll to the <span class="step-strong">Account &amp; Sync</span> section.</li>
+        <li>Tap <span class="step-strong">Delete Account</span>.</li>
+        <li>Read the confirmation prompt, then confirm. Your account and associated data are deleted immediately and permanently.</li>
+      </ol>
+      <p class="note">You must be signed in to delete your account. If you used Havyu without signing in, no account exists and all your data is stored only on your device &mdash; uninstalling the app removes it.</p>
+    </div>
+
+    <div class="card">
+      <h2>What gets deleted</h2>
+      <div class="data-row">
+        <span class="tag tag-del">Deleted</span>
+        <span class="label">Your account and sign-in identity (Apple or Google), permanently removed from our authentication system. This is immediate &mdash; there is no recovery period.</span>
+      </div>
+      <div class="data-row">
+        <span class="tag tag-del">Deleted</span>
+        <span class="label">All training and habit data stored on your device (workouts, routines, habit history, progress, and settings), erased from the device during the deletion process.</span>
+      </div>
+      <div class="data-row">
+        <span class="tag tag-del">Deleted</span>
+        <span class="label">Your subscription identity link with our payments provider (RevenueCat), disconnecting your account from any entitlement records.</span>
+      </div>
+      <p class="note">We do not retain a backend copy of your training or habit data. Havyu stores this data locally on your device, not on our servers.</p>
+    </div>
+
+    <div class="card">
+      <h2>What may be retained, and by whom</h2>
+      <div class="data-row">
+        <span class="tag tag-keep">Retained</span>
+        <span class="label">Purchase and transaction records held by Apple, Google, or our payments provider for legal, tax, and accounting purposes. These are retained by those providers under their own policies and are not used to identify you within Havyu after deletion.</span>
+      </div>
+      <p class="note">To cancel an active subscription, manage it directly in your Apple App Store or Google Play account settings &mdash; deleting your Havyu account does not cancel a subscription billed through the store.</p>
+    </div>
+
+    <footer>
+      <p>Questions about deletion or your data? Contact us at <a href="mailto:havyulabs@gmail.com">havyulabs@gmail.com</a>.</p>
+      <p><a href="https://havyuai.github.io/HavyuAI-legal/privacy.html">Privacy Policy</a></p>
+    </footer>
+  </div>
+</body>
+</html>
