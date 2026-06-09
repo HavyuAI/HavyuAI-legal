@@ -24,7 +24,7 @@ Havyu AI uses Large Language Models (LLMs) to provide coaching insights. To gene
 * We do not transmit personally identifiable information (such as your name or email address) alongside this workout data to the LLM provider.
 * You will be asked for explicit consent before any data is transmitted to our AI provider for the first time. You may withdraw this consent at any time in **Settings → AI Privacy**, after which AI coaching features fall back to on-device computation only.
 * When you log sets using voice, the text transcribed from your spoken commands is also sent to Google Gemini to interpret it into structured sets and reps, subject to the same consent. If you decline consent or the service is unavailable, voice input is interpreted on-device instead.
-* Google Gemini's data handling is governed by Google's own terms, under which Google acts as our data processor: it is contractually committed not to use submitted data to train Google's public models, and is required to protect your data to a standard equivalent to the protections described in this policy.
+* We use Google Gemini under Google's **Paid Services** terms. Under those terms Google acts as our data processor: it does not use your prompts or responses to improve or train its products and models, and it processes your data under the Google Cloud Data Processing Addendum, which requires it to protect your data to a standard equivalent to the protections described in this policy.
 
 ## 6. Account and Authentication (Optional)
 Havyu AI is fully usable without an account. However, you may optionally sign in using **Sign in with Apple** or **Sign in with Google** to enable subscription portability and (in a future version) cloud backup of your data.
@@ -33,7 +33,7 @@ If you choose to sign in:
 * We receive your email address. If you use Apple's "Hide My Email" feature, we receive a private relay address rather than your real email. If you sign in with Google, your sign-in is handled by Google and is subject to Google's own privacy policy.
 * This authentication data is stored by our authentication provider, **Supabase**, on infrastructure located in the EU.
 * Your user identifier is shared with our subscription processor, **RevenueCat**, so that your Pro subscription status follows you across devices.
-* We do not store any payment information. All payments are processed by Apple.
+* We do not store any payment information. All payments are processed by your app store — the Apple App Store on iOS or Google Play on Android.
 
 You can sign out at any time from Settings, which removes your session from this device. You can also permanently delete your account and all associated authentication data directly in the app via **Settings → Delete Account**. Alternatively, you may request deletion by contacting havyulabs@gmail.com from your registered email address. We process deletion requests promptly and within 30 days.
 
@@ -45,13 +45,13 @@ Your workout sets, habit check-ins, body weight, sleep, mood, and other personal
 We do not currently sync your workout data to any cloud server. If we add cloud backup in a future version, we will update this policy and request your explicit opt-in before any sync occurs.
 
 ## 8. Subscriptions and Payments (Free / Pro Tiers)
-Havyu AI offers both Free and Pro tiers. All payments and subscriptions are processed securely through the Apple App Store. We do not collect, process, or store your payment information on our servers. Subscription state is managed by **RevenueCat**, our subscription infrastructure provider.
+Havyu AI offers both Free and Pro tiers. All payments and subscriptions are processed securely through your app store — the Apple App Store on iOS or Google Play on Android. We do not collect, process, or store your payment information on our servers. Subscription state is managed by **RevenueCat**, our subscription infrastructure provider.
 
 ## 9. Diagnostics and Crash Reporting
 To ensure a stable experience, we use a third-party diagnostic service (**Sentry**) to capture crash reports and performance data. We configure our tools to strip personally identifiable information by default. This diagnostic data is used only to identify and fix problems and to improve app stability and performance. It is not used to track you and is not linked to your identity where technically avoidable; crash and performance data are associated only with an anonymous device identifier.
 
-## 10. Third-Party Sub-Processors
-We use the following sub-processors to operate Havyu AI:
+## 10. Third Parties and Sub-Processors
+We share data with the following third parties to operate Havyu AI:
 
 | Provider | Purpose | Data shared |
 |---|---|---|
@@ -59,9 +59,9 @@ We use the following sub-processors to operate Havyu AI:
 | Supabase | Authentication and (future) cloud sync | Email and user identifier (only if you sign in) |
 | RevenueCat | Subscription management | User identifier and entitlement status |
 | Sentry | Crash and performance diagnostics | Anonymous diagnostic data |
-| Apple | App Store distribution and payments | Per Apple's privacy policy |
+| Apple / Google Play | App store distribution and in-app payments | Governed by the respective store's own privacy policy |
 
-We only engage sub-processors that are bound by data-protection terms (such as a Data Processing Agreement) requiring them to safeguard your data to a standard equivalent to the protections described in this policy and to use it only for the purpose listed above.
+Of the parties above, Google Gemini, Supabase, and RevenueCat process data on our behalf as data processors and are bound by data-processing terms requiring them to protect your data to a standard equivalent to the protections described in this policy (Google under its Cloud Data Processing Addendum). Sentry receives only anonymous diagnostic data. Apple and Google Play are independent providers of app distribution and in-app payments and handle any data under their own privacy policies.
 
 ## 11. Your Rights (GDPR, UK GDPR, CCPA, and similar regulations)
 You have the right to:
