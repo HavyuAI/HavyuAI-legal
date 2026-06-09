@@ -1,6 +1,6 @@
 # Privacy Policy for Havyu AI
 
-**Last Updated:** 1 June 2026
+**Last Updated:** 9 June 2026
 
 ## 1. Introduction
 Welcome to Havyu AI. We are committed to protecting your privacy. This policy explains how our application collects, uses, and protects your information, including workout and habit data, authentication data, voice input, and technical diagnostics.
@@ -11,7 +11,9 @@ We are based in the UK and can be contacted at havyulabs@gmail.com.
 Havyu AI does **not** track you across other companies' apps or websites, and we do not use the App Tracking Transparency framework. We do not sell your data, and we do not use your data for third-party advertising. Our diagnostic tools are configured to strip personally identifiable information by default.
 
 ## 3. Voice Input (Microphone)
-We use your microphone only when you choose to log workouts via voice commands. When you dictate a set, your speech is transmitted to your device's native operating system speech-recognition service (Apple or Google) to convert it to text. The resulting text is parsed to extract your sets and reps. We do not store or intercept raw audio on our own servers.
+We use your microphone only when you choose to log workouts via voice commands. When you dictate a set, your speech is transmitted to your device's native operating system speech-recognition service (Apple or Google) to convert it to text. We do not store or intercept raw audio on our own servers.
+
+To interpret the resulting text into structured sets and reps, that text may be processed by our AI provider, Google Gemini, as described in Section 5 and subject to the same consent. If you have not granted AI consent, or the AI service is unavailable, the text is interpreted on-device instead.
 
 ## 4. Camera (Future Feature)
 A future version of Havyu AI may offer optional camera-based movement tracking to help count repetitions. This feature is **not active in the current version** of the app, and the app does not request camera access during normal use. If we introduce camera tracking in a future release, all visual processing is designed to happen locally on your device — we will not record, store, or transmit your video feed — and we will update this policy before the feature becomes available.
@@ -20,19 +22,20 @@ A future version of Havyu AI may offer optional camera-based movement tracking t
 Havyu AI uses Large Language Models (LLMs) to provide coaching insights. To generate your personalized coaching, we transmit your logged **habit and weightlifting data** to our AI provider, Google Gemini, through our own secure server.
 * This data is used strictly to generate your in-app coaching experience.
 * We do not transmit personally identifiable information (such as your name or email address) alongside this workout data to the LLM provider.
-* You will be asked for explicit consent before any data is transmitted to our AI provider for the first time. You may withdraw this consent at any time in Settings, after which AI coaching features fall back to on-device computation only.
-* Google Gemini's data handling is governed by Google's own terms; we have selected processing arrangements that commit not to use submitted data to train Google's public models.
+* You will be asked for explicit consent before any data is transmitted to our AI provider for the first time. You may withdraw this consent at any time in **Settings → AI Privacy**, after which AI coaching features fall back to on-device computation only.
+* When you log sets using voice, the text transcribed from your spoken commands is also sent to Google Gemini to interpret it into structured sets and reps, subject to the same consent. If you decline consent or the service is unavailable, voice input is interpreted on-device instead.
+* Google Gemini's data handling is governed by Google's own terms, under which Google acts as our data processor: it is contractually committed not to use submitted data to train Google's public models, and is required to protect your data to a standard equivalent to the protections described in this policy.
 
 ## 6. Account and Authentication (Optional)
-Havyu AI is fully usable without an account. However, you may optionally sign in using **Sign in with Apple** to enable subscription portability and (in a future version) cloud backup of your data.
+Havyu AI is fully usable without an account. However, you may optionally sign in using **Sign in with Apple** or **Sign in with Google** to enable subscription portability and (in a future version) cloud backup of your data.
 
 If you choose to sign in:
-* We receive your email address. If you use Apple's "Hide My Email" feature, we receive a private relay address rather than your real email.
+* We receive your email address. If you use Apple's "Hide My Email" feature, we receive a private relay address rather than your real email. If you sign in with Google, your sign-in is handled by Google and is subject to Google's own privacy policy.
 * This authentication data is stored by our authentication provider, **Supabase**, on infrastructure located in the EU.
 * Your user identifier is shared with our subscription processor, **RevenueCat**, so that your Pro subscription status follows you across devices.
 * We do not store any payment information. All payments are processed by Apple.
 
-You can sign out at any time from Settings, which removes your session from this device. You can also permanently delete your account and all associated authentication data directly in the app via **Settings → Account → Delete Account**. Alternatively, you may request deletion by contacting havyulabs@gmail.com from your registered email address. We process deletion requests promptly and within 30 days.
+You can sign out at any time from Settings, which removes your session from this device. You can also permanently delete your account and all associated authentication data directly in the app via **Settings → Delete Account**. Alternatively, you may request deletion by contacting havyulabs@gmail.com from your registered email address. We process deletion requests promptly and within 30 days.
 
 ## 7. Workout and Habit Data Storage
 Your workout sets, habit check-ins, body weight, sleep, mood, and other personal training data are stored **locally on your device** in an SQLite database. This data does not leave your device except:
@@ -52,17 +55,19 @@ We use the following sub-processors to operate Havyu AI:
 
 | Provider | Purpose | Data shared |
 |---|---|---|
-| Google Gemini | AI coaching | Workout, nutrition, sleep, and mood data, without name or email (with consent) |
+| Google Gemini | AI coaching | Workout, nutrition, sleep, and mood data, and the text of voice commands when voice logging is used — without name or email (with consent) |
 | Supabase | Authentication and (future) cloud sync | Email and user identifier (only if you sign in) |
 | RevenueCat | Subscription management | User identifier and entitlement status |
 | Sentry | Crash and performance diagnostics | Anonymous diagnostic data |
 | Apple | App Store distribution and payments | Per Apple's privacy policy |
 
+We only engage sub-processors that are bound by data-protection terms (such as a Data Processing Agreement) requiring them to safeguard your data to a standard equivalent to the protections described in this policy and to use it only for the purpose listed above.
+
 ## 11. Your Rights (GDPR, UK GDPR, CCPA, and similar regulations)
 You have the right to:
 * **Access** the data we hold about you. Most of your data is on your device — use Settings → Export Data. For authentication data, contact us at havyulabs@gmail.com.
-* **Delete** your data. Local data is deleted by uninstalling the app or using the relevant "Clear" options in Settings. Your account and authentication data can be deleted in-app via Settings → Account → Delete Account, or by contacting havyulabs@gmail.com.
-* **Withdraw consent** for AI coaching at any time in Settings.
+* **Delete** your data. Local data is deleted by uninstalling the app or using the relevant "Clear" options in Settings. Your account and authentication data can be deleted in-app via **Settings → Delete Account**, or by contacting havyulabs@gmail.com.
+* **Withdraw consent** for AI coaching at any time in **Settings → AI Privacy**.
 * **Object** to specific processing or request data portability — contact us.
 
 ## 12. Children's Privacy
