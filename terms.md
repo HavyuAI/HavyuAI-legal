@@ -1,10 +1,10 @@
 # Terms of Service for Havyu AI
 
-**Last Updated:** 08 May 2026
+**Last Updated:** 23 June 2026
 
 ## 1. Acceptance of Terms
 By downloading and using Havyu AI, you agree to these Terms of Service. If you do not agree, please do not use the app.
-* **Age Requirement:** You must be at least 13 years of age to use Havyu AI; by downloading or using the app, you confirm that you meet this requirement.
+* **Age Requirement:** You must be at least 16 years of age to use Havyu AI; by downloading or using the app, you confirm that you meet this requirement.
 
 ## 2. Strict Medical & Injury Disclaimer (Recreational Use Only)
 **Havyu AI is designed for informational and recreational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment.**
