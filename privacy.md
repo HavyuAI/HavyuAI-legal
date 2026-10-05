@@ -1,6 +1,6 @@
 # Privacy Policy for Havyu AI
 
-**Last Updated:** 9 June 2026
+**Last Updated:** 29 September 2026
 
 ## 1. Introduction
 Welcome to Havyu AI. We are committed to protecting your privacy. This policy explains how our application collects, uses, and protects your information, including workout and habit data, authentication data, voice input, and technical diagnostics.
@@ -20,6 +20,7 @@ A future version of Havyu AI may offer optional camera-based movement tracking t
 
 ## 5. AI Coaching & Workout Data
 Havyu AI uses Large Language Models (LLMs) to provide coaching insights. To generate your personalized coaching, we transmit your logged **habit and weightlifting data** to our AI provider, Google Gemini, through our own secure server.
+* With your consent, the AI coach also receives your **long-term strength goal** and your progress towards it, **session timing** (how long your workouts last, the time of day you train, and how hard sessions felt), and a **summary of the coach's own earlier observations** about your training (for example, that it previously suggested increasing the weight on a lift), so it can follow up on its advice.
 * This data is used strictly to generate your in-app coaching experience.
 * We do not transmit personally identifiable information (such as your name or email address) alongside this workout data to the LLM provider.
 * You will be asked for explicit consent before any data is transmitted to our AI provider for the first time. You may withdraw this consent at any time in **Settings → AI Privacy**, after which AI coaching features fall back to on-device computation only.
@@ -42,6 +43,8 @@ Your workout sets, habit check-ins, body weight, sleep, mood, and other personal
 * When transmitted to Google Gemini for AI coaching (with your consent — see Section 5); or
 * When you explicitly use the Export Data feature in Settings to share a copy with yourself.
 
+The app also keeps a short on-device record of the coach's earlier observations (for example, the action it showed for a lift and the weight at the time) so it can follow up with you. It contains no AI-written text, is automatically deleted after 90 days, and is included in Export Data and removed by Delete Account and by clearing your workout history.
+
 We do not currently sync your workout data to any cloud server. If we add cloud backup in a future version, we will update this policy and request your explicit opt-in before any sync occurs.
 
 ## 8. Subscriptions and Payments (Free / Pro Tiers)
@@ -55,7 +58,7 @@ We share data with the following third parties to operate Havyu AI:
 
 | Provider | Purpose | Data shared |
 |---|---|---|
-| Google Gemini | AI coaching | Workout, nutrition, sleep, and mood data, and the text of voice commands when voice logging is used — without name or email (with consent) |
+| Google Gemini | AI coaching | Workout, nutrition, sleep, and mood data; your long-term strength goal, session timing, and the coach's earlier observations; and the text of voice commands when voice logging is used — without name or email (with consent) |
 | Supabase | Authentication and (future) cloud sync | Email and user identifier (only if you sign in) |
 | RevenueCat | Subscription management | User identifier and entitlement status |
 | Sentry | Crash and performance diagnostics | Anonymous diagnostic data |
