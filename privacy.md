@@ -1,6 +1,6 @@
 # Privacy Policy for Havyu AI
 
-**Last Updated:** 5 October 2026
+**Last Updated:** 8 October 2026
 
 ## 1. Who We Are
 Havyu AI is developed and operated by an individual developer based in the United Kingdom, who is the seller named on the Havyu AI listing in the Apple App Store and Google Play ("we", "us"). Havyu AI is not operated by a company. We are the data controller for the personal data described in this policy and can be contacted at **havyulabs@gmail.com**.
@@ -60,14 +60,12 @@ Havyu AI uses Google's Gemini large language model to generate coaching insights
 
 **What is sent, with your consent:**
 * your logged workout data (exercises, variants, weights, reps, effort ratings and dates), and summaries computed from it on your device;
-* your habit check-ins, such as protein, water, sleep quality, mood, steps, body weight and its trend, calorie status, alcohol (including number of drinks) and cheat-meal days, and whether a value came from your health app;
+* your habit check-ins, such as protein, water, sleep quality, mood, steps, body weight and its trend, calorie status, clean-eating days, alcohol (including number of drinks), caffeine and cheat-meal days, and whether a value came from your health app;
 * your habit goals (for example your protein, water and step targets);
 * your long-term strength goal and your progress towards it;
 * session timing (how long workouts last, the time of day you train, and how hard sessions felt);
 * a summary of the coach's own earlier observations about your training, so it can follow up on its advice;
 * the text of voice commands, when Pro voice logging is used.
-
-Some data, such as caffeine and whole-foods check-ins, is analysed on your device only and is not sent.
 
 **What is not sent:** your name, email address or account details are never sent to the AI provider with your data.
 
